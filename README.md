@@ -21,7 +21,7 @@ Acess: https://www.instagram.com/developer/clients/manage/<br>
 
 
 2 - Generate access token.<br>
-2-1 Copy this link -> https://instagram.com/oauth/authorize/?client_id=[Client ID]&redirect_uri=http://instafeedjs.com&response_type=token<br>
+2-1 Copy this link -> https://instagram.com/oauth/authorize/?client_id=[Client ID]&redirect_uri=http://instafeedjs.com&response_type=token<br><br>
 2-2 Add the [Client id] of the copied link in step 1-8<br>
 2-3 Paste link changed in browser and go to page and give permission requested by instagram<br>
 2-4 Copy userId and accessToken generated.<br><br><br>
