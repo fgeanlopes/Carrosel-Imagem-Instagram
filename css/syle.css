@@ -1,0 +1,122 @@
+/*Image Instagram*/
+.feed_instagram .content_img {
+    position: relative;
+    overflow: hidden;
+    height: 222px;
+    margin-top: 10px;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.feed_instagram .content_img img {
+    -webkit-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.17);
+    -moz-box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.17);
+    box-shadow: 5px 5px 5px 0px rgba(0, 0, 0, 0.17);
+    display: block;
+    max-height: 90%;
+    max-width: 202px;
+    width: initial !important;
+}
+
+/*Hover image instagram*/
+.feed_instagram .content_img .box_icones{
+    opacity: 0;
+
+    position: absolute;
+    left: 10px;
+    top: 10px;
+
+    width: 100%;
+    height: 210px;
+    transition-delay: .2s;
+    transition-duration: .3s;
+}
+
+.feed_instagram .hover_img:hover .box_icones {
+    opacity: 1;
+
+    background: #f5cfd3;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition-delay: .2s;
+    transition-duration: .3s;
+}
+
+
+/*Icone rede social*/
+
+.feed_instagram .iten_icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+}
+
+.feed_instagram .iten_icon img {
+    width: auto !important;
+    height: 23px !important;
+    box-shadow:none;
+}
+
+.feed_instagram .iten_icon p {
+    margin: 0 5px;
+    color: #fff;
+}
+
+/*Button next and prev*/
+.feed_instagram .owl-nav button:hover, .feed_instagram .owl-nav button:hover {
+    background: transparent !important;
+    border: none;
+    color: white;
+    transition-duration: .3s;
+}
+
+.feed_instagram .owl-nav button.prev, .feed_instagram .owl-nav button.next {
+    background: #e6b4b5;
+    border: none;
+    color: white;
+    transition-duration: .3s;
+    margin: 30px 15px;
+}
+
+.feed_instagram .owl-nav button.prev:hover, .feed_instagram .owl-nav button.next:hover {
+    background: #e6b4b5 !important;
+}
+
+.feed_instagram button .prev:focus, button .next:focus {
+    outline: none;
+}
+
+
+/*Responsive*/
+@media (min-width: 600px) {
+    .feed_instagram .owl-nav button.prev, .feed_instagram .owl-nav button.next {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin-top: -10px;
+        background: #d4d4d452;
+
+        transition-duration: .3s;
+    }
+
+    .feed_instagram .owl-nav button.prev {
+        left: 0;
+        margin-left: -30px;
+    }
+
+    .feed_instagram .owl-nav button.next {
+        right: 0;
+        margin-right: -30px;
+    }
+
+    .feed_instagram button .prev:hover, .feed_instagram button .next:hover {
+        background: #e6b4b5;
+        color: #fff;
+        transition-duration: .3s;
+    }
+}
