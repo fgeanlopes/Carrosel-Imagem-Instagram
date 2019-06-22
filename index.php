@@ -70,13 +70,13 @@ $result = json_decode($result);
                     <div class="box_icones">
                         <!--icon likes-->
                         <div class="iten_icon">
-                            <img src="likes.svg">
+                            <img src="img/likes.svg">
                         <!--number likes-->
                             <p><?php echo $likes_post ?></p>
                         </div>
                         <div class="iten_icon">
                         <!--icon comments-->
-                            <img src="comments.svg">
+                            <img src="img/comments.svg">
                         <!--number commets-->
                             <p><?php echo $comments_post ?></p>
                         </div>
@@ -91,7 +91,7 @@ $result = json_decode($result);
 <!--Add js owl carousel-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
 <!--add my js-->
-<script src="app.js"></script>
+<script src="js/app.js"></script>
 
 </body>
 </html>

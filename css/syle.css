@@ -1,3 +1,10 @@
+
+.container{
+	max-width: 1200px;
+	margin:0 auto;
+}
+
+
 /*Image Instagram*/
 .feed_instagram .content_img {
     position: relative;
@@ -17,32 +24,35 @@
     max-height: 90%;
     max-width: 202px;
     width: initial !important;
+    border-radius: 10px;
 }
 
 /*Hover image instagram*/
 .feed_instagram .content_img .box_icones{
     opacity: 0;
-
-    position: absolute;
-    left: 10px;
-    top: 10px;
-
-    width: 100%;
-    height: 210px;
     transition-delay: .2s;
     transition-duration: .3s;
-}
 
-.feed_instagram .hover_img:hover .box_icones {
-    opacity: 1;
 
-    background: #f5cfd3;
+    background: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+
+    position: absolute;
+
+    width: 200px;
+    height: 200px;
 
     display: flex;
     align-items: center;
     justify-content: center;
 
     transition-delay: .2s;
+    transition-duration: .3s;
+}
+
+.feed_instagram .hover_img:hover .box_icones {
+	opacity: 1;
+  	transition-delay: .2s;
     transition-duration: .3s;
 }
 
@@ -84,7 +94,7 @@
 }
 
 .feed_instagram .owl-nav button.prev:hover, .feed_instagram .owl-nav button.next:hover {
-    background: #e6b4b5 !important;
+    background: #34576a !important
 }
 
 .feed_instagram button .prev:focus, button .next:focus {
@@ -96,12 +106,17 @@
 @media (min-width: 600px) {
     .feed_instagram .owl-nav button.prev, .feed_instagram .owl-nav button.next {
         position: absolute;
-        top: 50%;
-        transform: translate(0, -50%);
-        margin-top: -10px;
-        background: #d4d4d452;
+	    top: 50%;
+	    transform: translate(0, -50%);
 
-        transition-duration: .3s;
+	    margin-top: -10px;
+	    background: #2698ba;
+	    border-radius: 5px;
+	    text-transform: uppercase;
+	    padding: 10px 25px;
+	    cursor: pointer;
+
+	    transition-duration: .3s;
     }
 
     .feed_instagram .owl-nav button.prev {
